@@ -79,10 +79,15 @@ nav > div:nth-child(3) {background-color: #FF8159;}
 nav > div:nth-child(4) {background-color: #f72f3b;}
 
 nav > div {
-    display: flex;
-    justify-content: center;        /* центр вертикально */
-    flex-direction: column;         /* чтобы flex был в колонку */
-    text-align: center;             /* центр горизонтально */
+    /*display: flex;*/
+    /*justify-content: center;        !* центр вертикально *!*/
+    /*flex-direction: column;         !* чтобы flex был в колонку *!*/
+    /*text-align: center;             !* центр горизонтально *!*/
+
+    /* Что и flex выше, но на гридах */
+    display: grid;
+    align-items: center;
+    justify-items: center;
 
     min-height: 25%;                /* Далеко не сразу додумался до этого:)) */
     max-height: 100%;
