@@ -1,0 +1,33 @@
+.hideblock {
+  position: absolute;
+  bottom: 10px;
+  left: 0px;
+  background-color: black;
+  color: white;
+  width: 100px;
+  height: 100px;
+}
+.test{
+  background-color: black;
+  color: white;
+  width: 100px;
+  height: 100px;
+  opacity: 1;
+
+}
+
+.o-hide{
+  opacity: 0;
+}
+
+.o-unhide{
+  opacity: 1;
+}
+/* .o-hide {
+  opacity: 0;
+  transition: all ease 0.8s;
+}
+
+.o-hide:hover {
+  opacity: 1;
+} */

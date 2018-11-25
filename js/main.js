@@ -54,3 +54,10 @@ function getWeatherKhabarovsk () {
 
     httpRequest.send()
 }
+
+
+function hidemsk() {
+  var td = document.getElementById('mskblock');
+  alert(td.getAttribute("height"));
+
+}
