@@ -99,7 +99,11 @@ nav > div {
 }
 
 footer {                            /* тупо для центровки */
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+    /*display: flex;*/
+    /*justify-content: center;*/
+    /*flex-direction: column;*/
+
+    display: grid;
+    align-items: center;
+    justify-items: center;
 }
