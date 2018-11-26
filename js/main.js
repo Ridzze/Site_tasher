@@ -57,7 +57,12 @@ function getWeatherKhabarovsk () {
 
 
 function hidemsk() {
-  var td = document.getElementById('mskblock');
-  alert(td.getAttribute("height"));
+  var td = document.getElementById("mskblock");
+  if (td.style.opacity == 1) td.style.opacity = 0;
+  else td.style.opacity = 1;
+  // if (td) alert("td создана успешно");
+  // var tmp = td.style.opacity;
+  // if (tmp) alert("tmp создана успешно");
+  // alert(tmp);
 
 }
