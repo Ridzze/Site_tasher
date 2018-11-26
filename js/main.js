@@ -55,14 +55,11 @@ function getWeatherKhabarovsk () {
     httpRequest.send()
 }
 
-
-function hidemsk() {
-  var td = document.getElementById("mskblock");
+//--------------------------------------------------------
+// Функция меняет видимость элемента
+var tegId;
+function hidemsk( tegId ) {
+  var td = document.getElementById(tegId);
   if (td.style.opacity == 1) td.style.opacity = 0;
   else td.style.opacity = 1;
-  // if (td) alert("td создана успешно");
-  // var tmp = td.style.opacity;
-  // if (tmp) alert("tmp создана успешно");
-  // alert(tmp);
-
 }
