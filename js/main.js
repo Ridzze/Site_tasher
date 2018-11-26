@@ -21,7 +21,7 @@ setInterval (
     if (mon < 10) {mon="0"+mon;}
 
     document.getElementById ('date').innerHTML =
-        'Дата: ' + [day+':'+mon+':'+year+'&nbsp;&nbsp;'];
+        'Дата: ' + [day+'.'+mon+'.'+year+'&nbsp;&nbsp;'];
     },
 1000);
 
@@ -39,9 +39,9 @@ function getWeatherKhabarovsk () {
         if (httpRequest.readyState == XMLHttpRequest.DONE) {   // XMLHttpRequest.DONE == 4
         if (httpRequest.status == 200) {
             //alert(httpRequest.responseText);
-    var r = JSON.parse(httpRequest.responseText)
-    alert("Температура " + r.main.temp)
-    alert("Влажность " + r.main.humidity + " %")
+            var r = JSON.parse(httpRequest.responseText)
+            alert("Температура " + r.main.temp)
+            alert("Влажность " + r.main.humidity + " %")
         }
         else if (httpRequest.status == 400) {
             alert('There was an error 400');
