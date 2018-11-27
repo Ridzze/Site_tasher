@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Name</title>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/hide.css">
     <script type="text/javascript" src="js/main.js" defer></script>
 </head>
 <body>
@@ -29,13 +30,33 @@
 
 
         <main>
-            <img src="img/karta.jpg" alt="" id="karta">
+
+            <div class="map">
+              <!-- <img src="img/karta.jpg" alt="" id="karta"> -->
+              <div class="cityWeatherBlock msk" id="mskblock" style="opacity:0;">
+                МСК
+              </div>
+              <div class="cityWeatherBlock nsb" id="nsbblock" style="opacity:0;">
+                НСБ
+              </div>
+              <div class="cityWeatherBlock khv" id="khvblock" style="opacity:0;">
+                KHV
+              </div>
+
+            </div>
+
         </main>
 
 
         <footer>
             <p>(с) Сайт разработан командой “Тащеры” в 2018 г.</p>
         </footer>
+
     </div>
+
+
+      <button type="button" onclick="hidemsk('mskblock')">МСК</button>
+      <button type="button" onclick="hidemsk('nsbblock')">НСБ</button>
+      <button type="button" onclick="hidemsk('khvblock')">ХАБ</button>
 </body>
 </html>

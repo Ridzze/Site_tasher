@@ -54,3 +54,12 @@ function getWeatherKhabarovsk () {
 
     httpRequest.send()
 }
+
+//--------------------------------------------------------
+// Функция меняет видимость элемента
+var tegId;
+function hidemsk( tegId ) {
+  var td = document.getElementById(tegId);
+  if (td.style.opacity == 1) td.style.opacity = 0;
+  else td.style.opacity = 1;
+}
