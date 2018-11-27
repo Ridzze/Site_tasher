@@ -34,9 +34,13 @@ aside {
     grid-column: 1/-1;
     grid-row: 2;
 
-    display: flex;
-    justify-content: center;
+    /*display: flex;*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
+
+    display: grid;
     align-items: center;
+    justify-items: center;
 
     background-color: #4b054e;
     /*background-color: #5C80D6;*/
