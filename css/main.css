@@ -21,7 +21,7 @@ nav {
     grid-row: 3;
     /*border: 10px solid #4b054e;*/
     font: bolder 1vw Segoe Print;
-    color: #4b054e;
+    color: black;
 }
 
 main {
@@ -43,6 +43,7 @@ aside {
     /*font: bolder 1.5vw Segoe Print;*/
     font: bolder 35px Segoe Print;
     color: white;
+    text-shadow: black 3px 3px 5px;
 }
 
 footer {
