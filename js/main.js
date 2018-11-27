@@ -42,10 +42,9 @@ function getWeatherKhabarovsk () {
             var r = JSON.parse(httpRequest.responseText);
             document.getElementById("khabarovskWeather1").innerHTML = "t " + "- " + r.main.temp + " С";
             document.getElementById("khabarovskWeather2").innerHTML = "Влажность " + "- " + r.main.humidity + " %";
-            document.getElementById("khabarovskWeather3").innerHTML = r.weather.main; //возможно допилить функцию
+            document.getElementById("khabarovskWeather3").innerHTML = r.weather[0].main;
             document.getElementById("khabarovskWeather4").innerHTML = "Давление " + "- " + r.main.pressure * 0.75 + " мм.рт.ст";
-            document.getElementById("khabarovskWeather5").innerHTML = r.weather.description; //возможно допилить функцию
-
+            document.getElementById("khabarovskWeather5").innerHTML = r.weather[0].description;
         }
         else if (httpRequest.status == 400) {
             alert('There was an error 400');
