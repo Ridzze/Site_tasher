@@ -8,18 +8,24 @@
 }
 
 .msk{
-  left: 10%;
-  top: 55%;
+  left: 20%;
+  top: 72%;
+  border: 2px solid red;
+  text-align: center;
 }
 
-.nsb{
-  left: 40%;
-  top: 64%;
+.spb{
+  left: 10%;
+  top: 48%;
+  border: 2px solid red;
+  text-align: center;
 }
 
 .khv{
   left: 80%;
-  top: 55%;
+  top: 60%;
+  border: 2px solid red;
+  text-align: center;
 }
 
 .map {
