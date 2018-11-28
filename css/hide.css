@@ -3,34 +3,36 @@
   color: white;
   width: 15%;
   height: 8%;
-  position: relative;
+  position: absolute;
   z-index: 1;
 }
 
 .msk{
-  left: 20%;
-  top: 72%;
+  left: 10%;
+  top: 55%;
   border: 2px solid red;
   text-align: center;
 }
 
 .spb{
-  left: 10%;
-  top: 48%;
+  left: 15%;
+  top: 29%;
   border: 2px solid red;
   text-align: center;
 }
 
 .khv{
   left: 80%;
-  top: 60%;
+  top: 55%;
   border: 2px solid red;
   text-align: center;
 }
 
 .map {
-  background-image: url(../img/karta.jpg);
-  background-size: cover;
+   /* background-image: url(../img/karta.jpg); */
+  /* background-size: cover;  */
+  object-fit: cover;
   width: 100%;
   height: 100%;
+  position: relative;
 }
