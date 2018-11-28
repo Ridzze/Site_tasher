@@ -14,44 +14,51 @@
         </header>
 
 
-      <aside>
+        <aside>
             <div id = "date"></div>
             <div id ="timer"></div>
-      </aside>
+        </aside>
 
         <nav>
             <div class="daa1">Выберите город:</div>
             <div class="daa2">
-                <button onclick="getWeatherKhabarovsk()">Хабаровск</button>
-                <div id="khabarovskWeather1"></div>
-                <div id="khabarovskWeather2"></div>
-                <div id="khabarovskWeather3"></div>
-                <div id="khabarovskWeather4"></div>
-                <div id="khabarovskWeather5"></div>
+                <button type="button" onclick="hidemsk('khvblock');getWeatherKhabarovsk()"><img src="img/Khabarovsk.png"></button>
             </div>
-            <div class="daa3">Санкт-Петербург</div>
-            <div class="daa4">Москва</div>
+            <div class="daa3">
+                <button type="button" onclick="hidemsk('mskblock');getWeatherMoscow()"><img src="img/Moscow.png"></button>
+            </div>
+            <div class="daa4">
+                <button type="button" onclick="hidemsk('spbblock');getWeatherSaintPetersburg()"><img src="img/Saint-Petersburg.png"></button>
+            </div>
         </nav>
 
 
         <main>
-
             <div class="map">
-              <!-- <img src="img/karta.jpg" alt="" id="karta"> -->
-              <div class="cityWeatherBlock msk" id="mskblock" style="opacity:0;">
-                МСК
-              </div>
-              <div class="cityWeatherBlock spb" id="spbblock" style="opacity:0;">
-                СПБ
-              </div>
-              <div class="cityWeatherBlock khv" id="khvblock" style="opacity:0;">
-                KHV
-              </div>
-
+                <!-- <img src="img/karta.jpg" alt="" id="karta"> -->
+                <div class="cityWeatherBlock msk" id="mskblock" style="opacity:0;">   
+                    <div id="MoscowWeather1"></div>
+                    <div id="MoscowWeather2"></div>
+                    <div id="MoscowWeather3"></div>
+                    <div id="MoscowWeather4"></div>
+                    <div id="MoscowWeather5"></div>
+                </div>
+                <div class="cityWeatherBlock spb" id="spbblock" style="opacity:0;">
+                    <div id="SaintPetersburgWeather1"></div>
+                    <div id="SaintPetersburgWeather2"></div>
+                    <div id="SaintPetersburgWeather3"></div>
+                    <div id="SaintPetersburgWeather4"></div>
+                    <div id="SaintPetersburgWeather5"></div>
+                </div>
+                <div class="cityWeatherBlock khv" id="khvblock" style="opacity:0;">
+                    <div id="khabarovskWeather1"></div>
+                    <div id="khabarovskWeather2"></div>
+                    <div id="khabarovskWeather3"></div>
+                    <div id="khabarovskWeather4"></div>
+                    <div id="khabarovskWeather5"></div>
+                </div>
             </div>
-
         </main>
-
 
         <footer>
             <p>(с) Сайт разработан командой “Тащеры” в 2018 г.</p>
@@ -59,9 +66,5 @@
 
     </div>
 
-
-      <button type="button" onclick="hidemsk('mskblock')">МСК</button>
-      <button type="button" onclick="hidemsk('spbblock')">СПБ</button>
-      <button type="button" onclick="hidemsk('khvblock')">ХАБ</button>
 </body>
 </html>
