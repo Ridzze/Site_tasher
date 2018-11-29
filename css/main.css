@@ -98,9 +98,10 @@ footer {
     z-index: 0;
 }
 
-p:nth-child(1) {font-size: 24px;}
+p:nth-child(1) {font-size: 20px;}
 
-nav > div:nth-child(1) {background-color: #5C80D6; padding: 10px; font-size: 2vw;}
+nav > div:nth-child(1) {background-color: #5C80D6; padding: 10px;
+  font-size: 2vw; text-align: center;}
 
 /*nav > div:nth-child(2) {background-color: #43B369; border: 5px solid #4b054e;}*/
 nav > div:nth-child(2) {background-color: #43B369;}
@@ -148,8 +149,6 @@ footer {                            /* тупо для центровки */
   width: 80%;
   cursor: pointer;
   align: center;
-}
-.butimg.hover{
-  border: 10px solid violet;
-
+  border-top: 7px solid black;
+  border-bottom: 7px solid black;
 }
