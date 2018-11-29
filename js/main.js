@@ -36,10 +36,10 @@ function getWeatherKhabarovsk () {
             //alert(httpRequest.responseText);
                 var r = JSON.parse(httpRequest.responseText);
 
-                document.getElementById("khabarovskWeather1").innerHTML = "t " + r.main.temp + " С";
-                document.getElementById("khabarovskWeather2").innerHTML = "Влажность " + "- " + r.main.humidity + " %";
+                document.getElementById("khabarovskWeather1").innerHTML = "Температура: " + Math.round(r.main.temp) + " С";
+                document.getElementById("khabarovskWeather2").innerHTML = "Влажность: " + r.main.humidity + " %";
                 document.getElementById("khabarovskWeather3").innerHTML = r.weather[0].main;
-                document.getElementById("khabarovskWeather4").innerHTML = "Давление " + "- " + r.main.pressure * 0.75 + " мм.рт.ст";
+                document.getElementById("khabarovskWeather4").innerHTML = "Давление: " + Math.round(r.main.pressure * 0.75) + " мм.рт.ст";
                 document.getElementById("khabarovskWeather5").innerHTML = r.weather[0].description;
             }
 
@@ -65,10 +65,10 @@ function getWeatherSaintPetersburg () {
                 //alert(httpRequest.responseText);
                 var r = JSON.parse(httpRequest.responseText);
 
-                document.getElementById("SaintPetersburgWeather1").innerHTML = "t " + r.main.temp + " С";
-                document.getElementById("SaintPetersburgWeather2").innerHTML = "Влажность " + "- " + r.main.humidity + " %";
+                document.getElementById("SaintPetersburgWeather1").innerHTML = "Температура: " + Math.round(r.main.temp) + " С";
+                document.getElementById("SaintPetersburgWeather2").innerHTML = "Влажность: " + r.main.humidity + " %";
                 document.getElementById("SaintPetersburgWeather3").innerHTML = r.weather[0].main;
-                document.getElementById("SaintPetersburgWeather4").innerHTML = "Давление " + "- " + r.main.pressure * 0.75 + " мм.рт.ст";
+                document.getElementById("SaintPetersburgWeather4").innerHTML = "Давление: " + Math.round(r.main.pressure * 0.75) + " мм.рт.ст";
                 document.getElementById("SaintPetersburgWeather5").innerHTML = r.weather[0].description;
             }
 
@@ -95,10 +95,10 @@ function getWeatherMoscow () {
                 //alert(httpRequest.responseText);
                 var r = JSON.parse(httpRequest.responseText);
 
-                document.getElementById("MoscowWeather1").innerHTML = "t " + r.main.temp + " С";
+                document.getElementById("MoscowWeather1").innerHTML = "Температура: " + Math.round(r.main.temp) + " С";
                 document.getElementById("MoscowWeather2").innerHTML = "Влажность " + "- " + r.main.humidity + " %";
                 document.getElementById("MoscowWeather3").innerHTML = r.weather[0].main;
-                document.getElementById("MoscowWeather4").innerHTML = "Давление " + "- " + r.main.pressure * 0.75 + " мм.рт.ст";
+                document.getElementById("MoscowWeather4").innerHTML = "Давление " + "- " + Math.round(r.main.pressure * 0.75) + " мм.рт.ст";
                 document.getElementById("MoscowWeather5").innerHTML = r.weather[0].description;
             }
 
