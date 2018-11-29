@@ -149,6 +149,6 @@ footer {                            /* тупо для центровки */
   width: 80%;
   cursor: pointer;
   align: center;
-  border-top: 7px solid black;
-  border-bottom: 7px solid black;
+  border-top: 5px solid black;
+  border-bottom: 5px solid black;
 }
