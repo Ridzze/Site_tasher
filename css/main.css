@@ -138,3 +138,7 @@ footer {                            /* тупо для центровки */
     align-items: center;
     justify-items: center; */
 }
+#khvblock, #spbblock, #mskblock {
+  height: auto;
+  width: auto;
+}
