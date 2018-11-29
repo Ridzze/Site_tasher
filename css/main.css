@@ -30,7 +30,7 @@ nav {
     /* grid-column: 3;
     grid-row: 3; */
     /*border: 10px solid #4b054e;*/
-    font: bolder 1vw Segoe Print;
+    font: bolder 10% Segoe Print;
     color: black;
     grid-area: n;
 }
@@ -67,6 +67,7 @@ footer {
 
     background-color: #5C80D6;
     text-align: center;
+    font: bolder 10% Segoe Print;
 }
 
 /* если экран меньше, меняем сетку, меняем расположение ячеек, убираем header */
@@ -99,7 +100,7 @@ footer {
 
 p:nth-child(1) {font-size: 24px;}
 
-nav > div:nth-child(1) {background-color: #5C80D6; padding: 10px}
+nav > div:nth-child(1) {background-color: #5C80D6; padding: 10px; font-size: 2vw;}
 
 /*nav > div:nth-child(2) {background-color: #43B369; border: 5px solid #4b054e;}*/
 nav > div:nth-child(2) {background-color: #43B369;}
@@ -141,4 +142,14 @@ footer {                            /* тупо для центровки */
 #khvblock, #spbblock, #mskblock {
   height: auto;
   width: auto;
+  border-radius: 10px;
+}
+.butimg{
+  width: 80%;
+  cursor: pointer;
+  align: center;
+}
+.butimg.hover{
+  border: 10px solid violet;
+
 }
